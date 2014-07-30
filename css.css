@@ -28,12 +28,16 @@ justify-content: space-around;
   background: gold;
   padding: 10px;
   opacity: 0.5;
-  max-height: 150px;
+  
+}
+
+#leftPanel{
+max-height: 150px;
 }
 
 
 #rightPanel {
-margin-top: 250px;
+margin-top: 350px;
 }
 
 strong {
