@@ -17,12 +17,8 @@ function initialize() {
         .css("width", $('html').width() );
 
     svg = Raphael("svgcanvas", $("#svgcanvas").width(), $("#svgcanvas").height());
-
-    svgDrawLine( $('#leftPanel'), $('#rightPanel') );
     
-	 svgDrawLine( $('strong'), $('#getMappings') );
-	 
-	 svgDrawLine( $('#getMappings'), $('#menu')  );
+    $("#svgcanvas").trigger('readyToDrawLines');
 }
 
 function svgClear() {
