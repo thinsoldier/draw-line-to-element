@@ -11,12 +11,13 @@ $(document).ready(function () {
 
 function initialize() {  
     // set up the drawing area from Body of the document
+    $('body').prepend('<div id="svgcanvas">');
     //  -30px for the offset...
-    $("#svgbasics")
-        .css("height", $("#body").height() - 30)
-        .css("width", $("#body").width() - 30);
+    $("#svgcanvas")
+        .css("height", $("#body").height())
+        .css("width", $("#body").width());
 
-    svg = Raphael("svgbasics", $("#svgbasics").width(), $("#svgbasics").height());
+    svg = Raphael("svgcanvas", $("#svgcanvas").width(), $("#svgcanvas").height());
 
     svgDrawLine( $('#rightPanel'), $('#leftPanel'));
     
