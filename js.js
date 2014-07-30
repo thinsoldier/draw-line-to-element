@@ -13,8 +13,8 @@ function initialize() {
     // set up the drawing area from Body of the document
     $('body').prepend('<div id="svgcanvas">');
     $("#svgcanvas")
-        .css("height", $("#body").height())
-        .css("width", $("#body").width());
+        .css("height", $('html').height() )
+        .css("width", $('html').width() );
 
     svg = Raphael("svgcanvas", $("#svgcanvas").width(), $("#svgcanvas").height());
 

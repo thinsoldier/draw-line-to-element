@@ -15,12 +15,17 @@ article, aside, figure, footer, header, hgroup, menu, nav, section { display: bl
 body { font-family: Arial; font-size: 11px; }
 ul { list-style: none; }
 
+
+
 #svgcanvas { 
   position: absolute; left: 0px; top: 0px; bottom: 0; 
   border: solid 0px #484; 
   z-index: 100;
   pointer-events: none;
 }
+#svgcanvas svg { display: block; }
+
+
 
 #menu {
 width: 100px;
