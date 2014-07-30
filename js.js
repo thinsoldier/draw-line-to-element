@@ -19,6 +19,8 @@ function initialize() {
     svg = Raphael("svgbasics", $("#svgbasics").width(), $("#svgbasics").height());
 
     svgDrawLine( $('#rightPanel'), $('#leftPanel'));
+    
+	 svgDrawLine( $('#getMappings'), $('strong'));   
 }
 
 function svgClear() {
