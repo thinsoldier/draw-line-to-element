@@ -9,14 +9,16 @@ ul { list-style: none; }
   pointer-events: none;
 }
 
-.draggable { }
-.droppable { }  
-
-
-#pnlAllIn, #dialog, #dialogMappingResult,
-#popButton, #getMappings { 
-  z-index: 10;
+#menu {
+width: 100px;
+height: 100px;
+position: absolute;
+top: 40px;
+right: 40px;
+background: navy;
 }
+
+
 
 #panels{
 margin: 20px;
@@ -55,6 +57,6 @@ display: block;
 background: white;
 margin-left: 40px;
 width: 100px;
-height: 100px;
+height: 40px;
 padding: 10px;
 }

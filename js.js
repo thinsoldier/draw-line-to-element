@@ -20,7 +20,9 @@ function initialize() {
 
     svgDrawLine( $('#rightPanel'), $('#leftPanel'));
     
-	 svgDrawLine( $('#getMappings'), $('strong'));   
+	 svgDrawLine( $('#getMappings'), $('strong'));
+	 
+	 svgDrawLine( $('#menu'), $('#getMappings') );
 }
 
 function svgClear() {
