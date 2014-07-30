@@ -18,17 +18,17 @@ function initialize() {
 
     svg = Raphael("svgcanvas", $("#svgcanvas").width(), $("#svgcanvas").height());
 
-    svgDrawLine( $('#rightPanel'), $('#leftPanel'));
+    svgDrawLine( $('#leftPanel'), $('#rightPanel') );
     
-	 svgDrawLine( $('#getMappings'), $('strong'));
+	 svgDrawLine( $('strong'), $('#getMappings') );
 	 
-	 svgDrawLine( $('#menu'), $('#getMappings') );
+	 svgDrawLine( $('#getMappings'), $('#menu')  );
 }
 
 function svgClear() {
     svg.clear();
 }
-function svgDrawLine(eTarget, eSource) {
+function svgDrawLine(eSource, eTarget ) {
 
     // wait 1 sec before draw the lines, so we can get the position of the draggable
     setTimeout(function () {
