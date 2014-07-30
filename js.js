@@ -12,7 +12,6 @@ $(document).ready(function () {
 function initialize() {  
     // set up the drawing area from Body of the document
     $('body').prepend('<div id="svgcanvas">');
-    //  -30px for the offset...
     $("#svgcanvas")
         .css("height", $("#body").height())
         .css("width", $("#body").width());
@@ -68,7 +67,7 @@ function svgDrawLine(eTarget, eSource) {
 				.attr({
                    "stroke": color,
                    "stroke-width": 2,
-                   "stroke-dasharray": ""
+                   "stroke-dasharray": "-"
 				});
 
     }, 1000);
