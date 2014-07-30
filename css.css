@@ -1,3 +1,16 @@
+html, body {
+margin: 0;
+padding: 0;
+}
+
+body {
+/* 
+To avoid margin collapsing or margins poking out from an inner element causing the body to not
+full evelop its contents which could have an effect on the svg canvas
+ */
+padding: 1px; 
+}
+
 article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }        
 body { font-family: Arial; font-size: 11px; }
 ul { list-style: none; }
