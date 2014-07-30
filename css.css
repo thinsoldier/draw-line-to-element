@@ -15,20 +15,23 @@ ul { list-style: none; }
 #popButton, #getMappings { 
   z-index: 10;
 }
-#pnlAllIn {
-  margin: 20px; 
+
+#panels{
+margin: 20px;
+display: flex;
+justify-content: space-around;
 }
 
 #leftPanel, #rightPanel {
   width: 400px;
   float: left;
+  background: gold;
+  padding: 10px;
+  opacity: 0.5;
+  max-height: 150px;
 }
 
-/* Persons */
-.person { width: 300px; padding: 10px; border: 1px red solid; margin: 10px 0; }
-.person ul.buttons { float:right; }
-.person ul.name { margin-left: 20px; }
-.person ul.name h2 { margin-bottom: 0; }
-.person img { float:left; }
 
-.clearfix { clear: both; }
+#rightPanel {
+margin-top: 350px;
+}
